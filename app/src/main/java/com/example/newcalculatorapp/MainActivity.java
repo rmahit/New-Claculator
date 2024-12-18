@@ -28,6 +28,15 @@ public class MainActivity extends AppCompatActivity {
         bt3=(Button) findViewById(R.id.mul);
         bt4=(Button) findViewById(R.id.div);
 
+        bt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent ob=new Intent(getApplicationContext(),Subtraction.class);
+                startActivity(ob);
+            }
+        });
+
 
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
